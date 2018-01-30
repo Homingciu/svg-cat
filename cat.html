@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>叮当猫</title>
+    <style>
+        svg{
+            border: 1px solid black;
+        }
+        circle{
+            stroke: #000;
+        }
+        path{
+            fill: transparent;
+            stroke: #000;
+        }
+
+        ellipse{
+            fill: #fff;
+            stroke: #000;
+        }
+
+        .head{
+            fill: rgb(0, 122, 220);
+        }
+
+        .face{
+            fill: #fff;
+        }
+
+        .eyeBall{
+            fill: #000;
+        }
+
+        .nose{
+            fill: red;
+        }
+
+        line{
+            stroke: #000;
+        }
+
+        .neck{
+            fill: red;
+        }
+        
+        .bell{
+            fill: rgb(255, 232, 27);
+        }
+        circle.smallBell{
+            fill: #000;
+        }
+
+        .body{
+            fill: rgb(0, 122, 220);
+        }
+        
+        .hand{
+            fill: #fff;
+        }
+
+
+
+        .belly,
+        .pocket{
+            fill: #fff;
+        }
+    </style>
+</head>
+<body>
+    <svg width="1000" height="700">
+        <path class="head" d="M400 300 A100 100 0 1 1 500 300"></path>
+        <path class="face" d="M415 300 A70 70 0 1 1 485 300"></path>
+        
+        <ellipse class="eyeLeft" rx="20" ry="23" cx="425" cy="175"></ellipse>
+        <ellipse class="eyeRight" rx="20" ry="23" cx="465" cy="175"></ellipse>
+        <ellipse class="eyeBall left" rx="3" ry="5" cx="430" cy="182"></ellipse>
+        <ellipse class="eyeBall right" rx="3" ry="5" cx="460" cy="182"></ellipse>
+        
+        <circle class="nose" r="10" cx="445" cy="200"></circle>
+        <line x1="445" y1="210" x2="445" y2="260"></line>
+        <path class="mouse" d="M405 245 A60 60 0 0 0 485 245"></path>
+
+        <line class="beard" x1="395" y1="225" x2="425" y2="225"></line>
+        <line class="beard" x1="398" y1="215" x2="425" y2="220"></line>
+        <line class="beard" x1="398" y1="235" x2="425" y2="230"></line>
+
+        <line class="beard" x1="465" y1="225" x2="495" y2="225"></line>
+        <line class="beard" x1="465" y1="220" x2="492" y2="215"></line>
+        <line class="beard" x1="465" y1="230" x2="492" y2="235"></line>
+
+        <!--<line class="bozi" x1="400" y1="300" x2="500" y2="300"></line>-->
+        <!--<line class="bozi" x1="400" y1="310" x2="500" y2="310"></line>-->
+        <path class="neck" d="M400 300 A5 5 0 1 0 400 310 L500 310 A5 5 0 1 0 500 300 L400 300"></path>
+
+        
+
+        <path class="body" d="M400 310 L360 300 A11 11 0 0 1 355 320 L390 330 L390 410 L435 410 A7 5 0 1 1 455 410 L500 410 L500 330 L525 340 A11 11 0 0 1 530 320 L500 310"></path>
+        <circle class="hand" r="11" cx="355" cy="310"></circle>
+        <circle class="hand" r="11" cx="530" cy="330"></circle>
+        <ellipse class="foot" rx="30" ry="10" cx="407" cy="415"></ellipse>
+        <ellipse class="foot" rx="30" ry="10" cx="483" cy="415"></ellipse>
+
+        <path class="belly" d="M412 310 A45 45 0 1 0 478 310"></path>
+        <path class="pocket" d="M425 345 L465 345 A20 20 0 1 1 425 345"></path>
+    
+        <circle class="bell" r="10" cx="445" cy="315"></circle>
+        <line class="bellLine" x1="436" y1="312" x2="454" y2="312"></line>
+        <line class="bellLine_2" x1="438" y1="309" x2="453" y2="309"></line>
+        <circle class="smallBell" r="2" cx="445" cy="320"></circle>
+        <line x1="445" y1="322" x2="445" y2="325"></line>
+    </svg>
+</body>
+</html>
